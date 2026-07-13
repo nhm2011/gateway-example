@@ -1,0 +1,15 @@
+# Core
+pymodbus>=3.6          # Modbus TCP + Modbus RTU (RS485 + RS232)
+paho-mqtt>=2.1         # Kết nối MQTT lên VPS
+pyserial>=3.5          # Cần cho Modbus RTU, RS485, RS232
+
+# Giao thức theo hãng
+opcua>=0.98.13         # OPC UA (Siemens TIA Portal, Beckhoff, KEPServerEX)
+python-snap7>=1.3      # Siemens S7 gốc (cần cài thêm libsnap7 - xem DEPLOY.md)
+
+# Công cụ
+# Mitsubishi MC, Omron FINS, Delta DVP, LS XGB: không cần thư viện thêm (built-in socket)
+
+# Tuỳ chọn - chỉ cài nếu cần
+# pycomm3>=1.2.12      # Allen-Bradley EtherNet/IP (Rockwell / AB PLC)
+# bacpypes>=0.16       # BACnet (tự động hoá toà nhà)
